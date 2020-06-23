@@ -250,6 +250,8 @@
     <div id="myCanvasNav" class="overlay3" onclick="closeNav()"></div>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="?year=2020">2020</a>
+
         <a href="?year=2019">2019</a>
         <a href="?year=2018">2018</a>
         <a href="?year=2017">2017</a>
@@ -322,7 +324,7 @@
                 xhr.send();
             };
 
-            var yearOfJs = '2019', years, year;
+            var yearOfJs = '2020', years, year;
 
             var url = new URL(window.location.href);
             if (url.searchParams.get("year")) {
